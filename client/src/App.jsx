@@ -1,7 +1,12 @@
 import "./App.css";
+import Graph from "./components/GraphDemo";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Graph />
+    </>
+  );
 }
 
 export default App;
