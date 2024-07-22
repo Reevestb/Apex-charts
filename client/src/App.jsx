@@ -1,14 +1,11 @@
 import "./App.css";
 
-import GraphDemo from "./components/GraphDemo";
-
-import Graph from "./components/FirstGraph";
- main
+import MyComponent from "./components/FirstGraph";
 
 function App() {
   return (
     <>
-      <Graph />
+      <MyComponent />
     </>
   );
 }

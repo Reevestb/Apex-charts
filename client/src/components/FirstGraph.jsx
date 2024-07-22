@@ -1,27 +1,7 @@
+import React, { Component } from "react";
+import Chart from "react-apexcharts";
 import ApexCharts from "apexcharts";
-import React from "react";
-import { createRoot } from "react-dom/client";
-
-// var options = {
-//   chart: {
-//     type: "line",
-//   },
-//   series: [
-//     {
-//       name: "sales",
-//       data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
-//     },
-//   ],
-//   xaxis: {
-//     categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-//   },
-// };
-
-// var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-// chart.render();
-
-class ApexChart extends React.Component {
+class MyComponent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -84,23 +64,19 @@ class ApexChart extends React.Component {
 
   render() {
     return (
-      <>
-        <div>
-          <div id="chart">
-            <ApexCharts
-              options={this.state.options}
-              series={this.state.series}
-              type="line"
-              height={350}
-              width={400}
-            />
-          </div>
-          <div id="html-dist"></div>
+      <div>
+        <div id="chart">
+          <Chart
+            options={this.state.options}
+            series={this.state.series}
+            type="line"
+            height={350}
+            width={400}
+          />
         </div>
-      </>
+        <div id="html-dist"></div>
+      </div>
     );
   }
 }
-
-const domContainer = document.querySelector("#app");
-ReactDOM.createRoot(React.createElement(ApexChart), domContainer);
+export default MyComponent;
