@@ -1,4 +1,6 @@
 import "./App.css";
+import Donut from "./components/DonutChart";
+import LineChart from "./components/LineChart";
 
 import MyComponent from "./components/ReactBarChart";
 
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
       <MyComponent />
+      <LineChart />
+      <Donut />
     </>
   );
 }
