@@ -1,5 +1,9 @@
 import "./App.css";
-import Graph from "./components/GraphDemo";
+
+import GraphDemo from "./components/GraphDemo";
+
+import Graph from "./components/FirstGraph";
+ main
 
 function App() {
   return (
