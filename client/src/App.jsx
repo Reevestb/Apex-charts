@@ -1,14 +1,16 @@
 import "./App.css";
 
-import GraphDemo from "./components/GraphDemo";
+import MyComponent from "./components/ReactBarChart";
 
-import Graph from "./components/FirstGraph";
- main
+// import GraphDemo from "./components/GraphDemo";
+
+// import Graph from "./components/FirstGraph";
+//  main
 
 function App() {
   return (
     <>
-      <Graph />
+      <MyComponent />
     </>
   );
 }

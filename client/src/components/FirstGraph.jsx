@@ -1,6 +1,5 @@
 import ApexCharts from "apexcharts";
-import React from "react";
-import { createRoot } from "react-dom/client";
+import { Component } from "react";
 
 // var options = {
 //   chart: {
@@ -21,7 +20,7 @@ import { createRoot } from "react-dom/client";
 
 // chart.render();
 
-class ApexChart extends React.Component {
+class ApexChart extends Component {
   constructor(props) {
     super(props);
 
@@ -102,5 +101,4 @@ class ApexChart extends React.Component {
   }
 }
 
-const domContainer = document.querySelector("#app");
-ReactDOM.createRoot(React.createElement(ApexChart), domContainer);
+export default ApexChart;
