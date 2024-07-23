@@ -1,8 +1,8 @@
-import { Component } from "react";
+import { CodeBlock } from "react-code-block";
+
+export default function CodeBlockBC() {
+  const codeExample = `import { Component } from "react";
 import Chart from "react-apexcharts";
-// import BcCode from "/images/BarChart.png";
-import CbBarChart from "./codeBlockBc";
-import "./RBC.css";
 
 export default class MyComponent extends Component {
   constructor(props) {
@@ -25,10 +25,9 @@ export default class MyComponent extends Component {
       ],
     };
   }
-
-  render() {
+    render() {
     return (
-      <main id="BC-page">
+      <>
         <div className="app">
           <div className="row">
             <div className="mixed-chart">
@@ -41,11 +40,21 @@ export default class MyComponent extends Component {
             </div>
           </div>
         </div>
-        {/* <img src={BcCode} height={"400px"} /> */}
-        <div id="cb-bc">
-          <CbBarChart />
-        </div>
-      </main>
+      </>
     );
   }
+}
+`;
+  return (
+    <CodeBlock code={codeExample} language="js">
+      <CodeBlock.Code className="bg-black">
+        <div id="bc-lineN">
+          <CodeBlock.LineNumber className="cb-ln" />
+          <CodeBlock.LineContent className="cb-lc">
+            <CodeBlock.Token />
+          </CodeBlock.LineContent>
+        </div>
+      </CodeBlock.Code>
+    </CodeBlock>
+  );
 }

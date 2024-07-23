@@ -1,0 +1,22 @@
+#BC-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#cb-bc {
+  background-color: rgb(57, 57, 57);
+  justify-content: flex-start;
+  text-align: start;
+}
+
+#bc-lineN {
+  display: table-row;
+}
+
+.cb-ln {
+  display: table-cell;
+  color: lightgrey;
+  padding-right: 1em;
+  user-select: none;
+}
