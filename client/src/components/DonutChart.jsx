@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
+import DcCode from "/images/Donut.png";
 
-class Donut extends Component {
+export default class Donut extends Component {
   constructor(props) {
     super(props);
 
@@ -14,16 +15,17 @@ class Donut extends Component {
 
   render() {
     return (
-      <div className="donut">
-        <Chart
-          options={this.state.options}
-          series={this.state.series}
-          type="donut"
-          width="380"
-        />
-      </div>
+      <>
+        <div className="donut">
+          <Chart
+            options={this.state.options}
+            series={this.state.series}
+            type="donut"
+            width="380"
+          />
+          <img src={DcCode} height={"400px"} />
+        </div>
+      </>
     );
   }
 }
-
-export default Donut;

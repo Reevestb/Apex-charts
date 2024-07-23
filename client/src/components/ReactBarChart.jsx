@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
+import BcCode from "/images/BarChart.png";
 
-class MyComponent extends Component {
+export default class MyComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -25,20 +26,21 @@ class MyComponent extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="bar"
-              width="500"
-            />
+      <>
+        <div className="app">
+          <div className="row">
+            <div className="mixed-chart">
+              <Chart
+                options={this.state.options}
+                series={this.state.series}
+                type="bar"
+                width="500"
+              />
+            </div>
           </div>
         </div>
-      </div>
+        <img src={BcCode} height={"400px"} />
+      </>
     );
   }
 }
-
-export default MyComponent;

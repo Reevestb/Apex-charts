@@ -1,7 +1,3 @@
-import Donut from "./components/DonutChart";
-import LineChart from "./components/LineChart";
-import MyComponent from "./components/ReactBarChart";
-
 import Api2 from "./pages/Api";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
@@ -10,7 +6,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import ApiPage from "./pages/Api";
-
 
 // import GraphDemo from "./components/GraphDemo";
 
@@ -26,9 +21,7 @@ export default function App() {
         <Route path="/api" element={<Api2 />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <MyComponent />
-      <LineChart />
-      <Donut />
+
       <ApiPage />
     </>
   );
