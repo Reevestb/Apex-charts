@@ -1,9 +1,42 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
+import { useState, useEffect } from "react";
 
 // class MyComponent extends React.Component {
 //     constructor(props) {
 //       super(props);
+
+const [chartData, setChartData] = useState([]);
+
+async function fetchApi() {
+  useEffect(() => {
+    //I want to get data from API with fetch
+    async function fetchData() {
+      const response = await fetch(
+        "https://financialmodelingprep.com/api/v3/historical-chart/5min/AAPL?from=2023-08-10&to=2023-09-10&apikey=09yppK4Zhfds01pRN8vICc0IizAsIzVk"
+      );
+      //we parse the fetched data into json
+      const data = await response.json();
+      //we need to wrangle the data, filter what we want
+      //   const wrangledData = data.chartData[2];
+      setChartData(data);
+      // console.log(data);
+      // const date = data[0];
+      // console.log(date);
+    }
+    //I called the fetchData function here to be tracked by useEffect
+    // fetchData();
+  }, []);
+}
+
+fetchApi();
+
+function dataLoop(chartData) {
+  for (let i = 0; i < 50; i++) {
+    return data[i];
+  }
+}
+console.log(dataLoop(chartData));
 
 var optionsLine = {
   chart: {
