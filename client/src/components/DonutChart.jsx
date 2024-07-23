@@ -26,9 +26,9 @@ export default class Donut extends Component {
             width="380"
           />
           {/* <img src={DcCode} height={"400px"} /> */}
-          <div id="cb-bc">
-            <CbDonut />
-          </div>
+        </div>
+        <div id="cb-bc">
+          <CbDonut />
         </div>
       </main>
     );
