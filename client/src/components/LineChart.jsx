@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
+import LcCode from "/images/LineChart.png";
 
-class LineChart extends Component {
+export default class LineChart extends Component {
   constructor(props) {
     super(props);
 
@@ -25,20 +26,21 @@ class LineChart extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="line"
-              width="500"
-            />
+      <>
+        <div className="app">
+          <div className="row">
+            <div className="mixed-chart">
+              <Chart
+                options={this.state.options}
+                series={this.state.series}
+                type="line"
+                width="500"
+              />
+            </div>
           </div>
         </div>
-      </div>
+        <img src={LcCode} height={"400px"} />
+      </>
     );
   }
 }
-
-export default LineChart;
