@@ -3,6 +3,7 @@ import Donut from "./components/DonutChart";
 import LineChart from "./components/LineChart";
 
 import MyComponent from "./components/ReactBarChart";
+import ApiPage from "./pages/Api";
 
 // import GraphDemo from "./components/GraphDemo";
 
@@ -15,6 +16,7 @@ function App() {
       <MyComponent />
       <LineChart />
       <Donut />
+      <ApiPage />
     </>
   );
 }
