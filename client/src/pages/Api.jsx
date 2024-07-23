@@ -24,21 +24,43 @@ export default function ApiPage() {
       //   const wrangledData = data.chartData[2];
       setChartData([data]);
       // console.log(data);
+
+      // function dataLoop([data]) {
+      //   for (let i = 0; i < data.length; i++) {
+      //     if (i < 5) {
+      //       return data[i];
+      //     }
+      //   }
+      // }
+      // dataLoop();
+      // console.log(dataLoop(chartData));
       // const date = data[0];
       // console.log(date);
     }
     //I called the fetchData function here to be tracked by useEffect
     fetchData();
-  }, []);
+  }, [chartData]);
 
   return (
     <>
       <h1>Apple Stock Data</h1>
-      {chartData.map((item) => {
-        console.log(chartData);
+      {chartData.map((item, index) => {
+        // console.log(chartData);
         return (
           <>
-            <h2>{item?.date}</h2>
+            <h2 key={index}>
+              {item?.date[0]}
+              {item?.date[9]}
+              {item?.date[19]}
+              {item?.date[29]}
+              {item?.date[39]}
+              {item?.date[49]}
+              {item?.date[59]}
+              {item?.date[69]}
+              {item?.date[79]}
+              {item?.date[89]}
+              {item?.date[99]}
+            </h2>
           </>
         );
       })}
