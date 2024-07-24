@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import ApiPage from "./pages/Api";
+// import ApiPage from "./pages/Api";
 
 // import GraphDemo from "./components/GraphDemo";
 
@@ -22,7 +22,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
-      <ApiPage />
+      {/* <ApiPage /> */}
     </>
   );
 }

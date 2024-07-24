@@ -1,7 +1,6 @@
 import ApexCharts from "apexcharts";
 import moment from "moment";
 import "./Dashboard.css";
-import moment from "moment";
 export default function DashboardPage() {
   window.Apex = {
     chart: {
@@ -51,11 +50,11 @@ export default function DashboardPage() {
     },
   };
 
-  var trigoStrength = 3;
-  var iteration = 11;
+  let trigoStrength = 3;
+  let iteration = 11;
 
   function getRandom() {
-    var i = iteration;
+    let i = iteration;
     return (
       (Math.sin(i / trigoStrength) * (i / trigoStrength) +
         i / trigoStrength +
@@ -71,11 +70,11 @@ export default function DashboardPage() {
   }
 
   function generateMinuteWiseTimeSeries(baseval, count, yrange) {
-    var i = 0;
-    var series = [];
+    let i = 0;
+    let series = [];
     while (i < count) {
-      var x = baseval;
-      var y =
+      let x = baseval;
+      let y =
         (Math.sin(i / trigoStrength) * (i / trigoStrength) +
           i / trigoStrength +
           1) *
@@ -89,14 +88,14 @@ export default function DashboardPage() {
   }
 
   function getNewData(baseval, yrange) {
-    var newTime = baseval + 300000;
+    let newTime = baseval + 300000;
     return {
       x: newTime,
       y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min,
     };
   }
 
-  var optionsColumn = {
+  let optionsColumn = {
     chart: {
       height: 350,
       type: "bar",
@@ -194,13 +193,13 @@ export default function DashboardPage() {
     },
   };
 
-  var chartColumn = new ApexCharts(
+  let chartColumn = new ApexCharts(
     document.querySelector("#columnchart"),
     optionsColumn
   );
   chartColumn.render();
 
-  var optionsLine = {
+  let optionsLine = {
     chart: {
       height: 350,
       type: "line",
@@ -329,13 +328,13 @@ export default function DashboardPage() {
     },
   };
 
-  var chartLine = new ApexCharts(
+  let chartLine = new ApexCharts(
     document.querySelector("#linechart"),
     optionsLine
   );
   chartLine.render();
 
-  var optionsCircle = {
+  let optionsCircle = {
     chart: {
       type: "radialBar",
       height: 250,
@@ -383,13 +382,13 @@ export default function DashboardPage() {
     },
   };
 
-  var chartCircle = new ApexCharts(
+  let chartCircle = new ApexCharts(
     document.querySelector("#circlechart"),
     optionsCircle
   );
   chartCircle.render();
 
-  var optionsProgress1 = {
+  let optionsProgress1 = {
     chart: {
       height: 70,
       type: "bar",
@@ -445,13 +444,13 @@ export default function DashboardPage() {
     },
   };
 
-  var chartProgress1 = new ApexCharts(
+  let chartProgress1 = new ApexCharts(
     document.querySelector("#progress1"),
     optionsProgress1
   );
   chartProgress1.render();
 
-  var optionsProgress2 = {
+  let optionsProgress2 = {
     chart: {
       height: 70,
       type: "bar",
@@ -512,13 +511,13 @@ export default function DashboardPage() {
     },
   };
 
-  var chartProgress2 = new ApexCharts(
+  let chartProgress2 = new ApexCharts(
     document.querySelector("#progress2"),
     optionsProgress2
   );
   chartProgress2.render();
 
-  var optionsProgress3 = {
+  let optionsProgress3 = {
     chart: {
       height: 70,
       type: "bar",
@@ -578,7 +577,7 @@ export default function DashboardPage() {
     },
   };
 
-  var chartProgress3 = new ApexCharts(
+  let chartProgress3 = new ApexCharts(
     document.querySelector("#progress3"),
     optionsProgress3
   );
@@ -616,7 +615,7 @@ export default function DashboardPage() {
       getRangeRandom({ min: 10, max: 100 }),
     ]);
 
-    var p1Data = getRangeRandom({ min: 10, max: 100 });
+    let p1Data = getRangeRandom({ min: 10, max: 100 });
     chartProgress1.updateOptions({
       series: [
         {
@@ -628,7 +627,7 @@ export default function DashboardPage() {
       },
     });
 
-    var p2Data = getRangeRandom({ min: 10, max: 100 });
+    let p2Data = getRangeRandom({ min: 10, max: 100 });
     chartProgress2.updateOptions({
       series: [
         {
@@ -640,7 +639,7 @@ export default function DashboardPage() {
       },
     });
 
-    var p3Data = getRangeRandom({ min: 10, max: 100 });
+    let p3Data = getRangeRandom({ min: 10, max: 100 });
     chartProgress3.updateOptions({
       series: [
         {

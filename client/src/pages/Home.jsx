@@ -2,7 +2,7 @@ import Donut from "../components/DonutChart";
 import GettingStarted from "../components/GettingStarted";
 import LineChart from "../components/LineChart";
 import MyComponent from "../components/ReactBarChart";
-import ApiFetching from "../utils/apiFetch";
+// import ApiFetching from "../utils/apiFetch";
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
       <LineChart />
       <h2>Donut Chart</h2>
       <Donut />
-      <ApiFetching />
+      {/* <ApiFetching /> */}
     </>
   );
 }
