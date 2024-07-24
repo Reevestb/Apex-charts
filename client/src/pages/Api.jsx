@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ApiComponent from "../components/Apicomponent";
 
 export default function ApiPage() {
   const [chartData, setChartData] = useState([]); //we need an array to map through it
@@ -42,17 +43,12 @@ export default function ApiPage() {
         return (
           <>
             <h2 key={index}>
+              <>index:{index}</>
               {item[0].date}
               {item[9].date}
               {item[19].date}
-              {item[29].date}
-              {item[39].date}
-              {item[49].date}
-              {item[59].date}
-              {item[69].date}
-              {item[79].date}
-              {item[89].date}
-              {item[99].date}
+
+              <ApiComponent />
             </h2>
           </>
         );

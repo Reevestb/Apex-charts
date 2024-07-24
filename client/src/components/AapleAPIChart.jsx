@@ -78,7 +78,7 @@ var optionsLine = {
                   },
                 ],
                 subtitle: {
-                  text: parseInt(getRandom() * Math.random()).toString(),
+                  text: parseInt(getRandom() * Math.random()).toString(), //think these are x labels
                 },
               },
               false,
@@ -118,6 +118,7 @@ var optionsLine = {
     {
       name: "Running",
       data: generateMinuteWiseTimeSeries(
+        //this will be y-axis data points
         new Date("12/12/2016 00:20:00").getTime(),
         12,
         {
@@ -129,6 +130,7 @@ var optionsLine = {
     {
       name: "Waiting",
       data: generateMinuteWiseTimeSeries(
+        //same deal for second lineif needed
         new Date("12/12/2016 00:20:00").getTime(),
         12,
         {
