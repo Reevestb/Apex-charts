@@ -3,6 +3,7 @@ import Chart from "react-apexcharts";
 // import LcCode from "/images/LineChart.png";
 import CbLineChart from "./CbLineChart";
 import "./RBC.css";
+import { Card } from "@radix-ui/themes";
 
 export default class LineChart extends Component {
   constructor(props) {
@@ -28,24 +29,28 @@ export default class LineChart extends Component {
 
   render() {
     return (
-      <main id="BC-page">
-        <div className="app">
-          <div className="row">
-            <div className="mixed-chart">
-              <Chart
-                options={this.state.options}
-                series={this.state.series}
-                type="line"
-                width="500"
-              />
+      <Card>
+        <br></br>
+        <div id="BC-page">
+          <div className="app">
+            <div className="row">
+              <div className="mixed-chart">
+                <Chart
+                  options={this.state.options}
+                  series={this.state.series}
+                  type="line"
+                  width="500"
+                />
+              </div>
             </div>
           </div>
+          {/* <img src={LcCode} height={"400px"} /> */}
+          <div id="cb-bc">
+            <CbLineChart />
+          </div>
+          {/* </Flex> */}
         </div>
-        {/* <img src={LcCode} height={"400px"} /> */}
-        <div id="cb-bc">
-          <CbLineChart />
-        </div>
-      </main>
+      </Card>
     );
   }
 }

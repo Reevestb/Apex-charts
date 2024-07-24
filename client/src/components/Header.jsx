@@ -8,14 +8,20 @@ export default function Header() {
         <Flex direction="row" align="center" justify="between" wrap="wrap">
           <Heading>Apex.js charts - Data visualisation</Heading>
           <Flex gap="2">
-            <Button variant="outline">
-              <Link to="/">Home</Link>
+            <Button>
+              <Link className="link-text" to="/">
+                Home
+              </Link>
             </Button>
-            <Button variant="outline">
-              <Link to="/api">Api</Link>
+            <Button>
+              <Link className="link-text" to="/api">
+                Api
+              </Link>
             </Button>
-            <Button variant="outline">
-              <Link to="/dashboard">Dashboard</Link>
+            <Button>
+              <Link className="link-text" to="/dashboard">
+                Dashboard
+              </Link>
             </Button>
           </Flex>
         </Flex>

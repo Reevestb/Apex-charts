@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ApiFetching from "../utils/apiFetch";
 
 export default function ApiPage() {
   const [chartData, setChartData] = useState([]); //we need an array to map through it
@@ -42,17 +43,12 @@ export default function ApiPage() {
         return (
           <>
             <h2 key={index}>
-              {item?.date[0]}
-              {item?.date[9]}
-              {item?.date[19]}
-              {item?.date[29]}
-              {item?.date[39]}
-              {item?.date[49]}
-              {item?.date[59]}
-              {item?.date[69]}
-              {item?.date[79]}
-              {item?.date[89]}
-              {item?.date[99]}
+              <>index:{index}</>
+              {item[0].date}
+              {item[9].date}
+              {item[19].date}
+
+              {/* <ApiFetching /> */}
             </h2>
           </>
         );

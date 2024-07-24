@@ -3,6 +3,7 @@ import Chart from "react-apexcharts";
 // import DcCode from "/images/Donut.png";
 import CbDonut from "./CbDonut";
 import "./RBC.css";
+import { Card } from "@radix-ui/themes";
 
 export default class Donut extends Component {
   constructor(props) {
@@ -17,20 +18,23 @@ export default class Donut extends Component {
 
   render() {
     return (
-      <main id="BC-page">
-        <div className="donut">
-          <Chart
-            options={this.state.options}
-            series={this.state.series}
-            type="donut"
-            width="380"
-          />
-          {/* <img src={DcCode} height={"400px"} /> */}
+      <Card>
+        <br></br>
+        <div id="BC-page">
+          <div className="donut">
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="donut"
+              width="380"
+            />
+            {/* <img src={DcCode} height={"400px"} /> */}
+          </div>
+          <div id="cb-bc">
+            <CbDonut />
+          </div>
         </div>
-        <div id="cb-bc">
-          <CbDonut />
-        </div>
-      </main>
+      </Card>
     );
   }
 }
