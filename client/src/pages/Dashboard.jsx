@@ -1,4 +1,5 @@
 import ApexCharts from "apexcharts";
+import moment from "moment";
 import "./Dashboard.css";
 export default function DashboardPage() {
   window.Apex = {

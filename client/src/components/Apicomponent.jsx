@@ -62,7 +62,7 @@ export default function ApiComponent() {
   //   }]
   // }]
 
-  export default class AppleChart extends Component {
+  class AppleChart extends Component {
     constructor(props) {
       super(props);
 
