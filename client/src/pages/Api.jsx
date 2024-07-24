@@ -42,17 +42,17 @@ export default function ApiPage() {
         return (
           <>
             <h2 key={index}>
-              {item?.date[0]}
-              {item?.date[9]}
-              {item?.date[19]}
-              {item?.date[29]}
-              {item?.date[39]}
-              {item?.date[49]}
-              {item?.date[59]}
-              {item?.date[69]}
-              {item?.date[79]}
-              {item?.date[89]}
-              {item?.date[99]}
+              {item[0].date}
+              {item[9].date}
+              {item[19].date}
+              {item[29].date}
+              {item[39].date}
+              {item[49].date}
+              {item[59].date}
+              {item[69].date}
+              {item[79].date}
+              {item[89].date}
+              {item[99].date}
             </h2>
           </>
         );
