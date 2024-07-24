@@ -3,6 +3,7 @@ import Chart from "react-apexcharts";
 // import BcCode from "/images/BarChart.png";
 import CbBarChart from "./codeBlockBc";
 import "./RBC.css";
+import { Card } from "@radix-ui/themes";
 
 export default class MyComponent extends Component {
   constructor(props) {
@@ -28,24 +29,27 @@ export default class MyComponent extends Component {
 
   render() {
     return (
-      <main id="BC-page">
-        <div className="app">
-          <div className="row">
-            <div className="mixed-chart">
-              <Chart
-                options={this.state.options}
-                series={this.state.series}
-                type="bar"
-                width="500"
-              />
+      <Card>
+        <br></br>
+        <div id="BC-page">
+          <div className="app">
+            <div className="row">
+              <div className="mixed-chart">
+                <Chart
+                  options={this.state.options}
+                  series={this.state.series}
+                  type="bar"
+                  width="500"
+                />
+              </div>
             </div>
           </div>
+          {/* <img src={BcCode} height={"400px"} /> */}
+          <div id="cb-bc">
+            <CbBarChart />
+          </div>
         </div>
-        {/* <img src={BcCode} height={"400px"} /> */}
-        <div id="cb-bc">
-          <CbBarChart />
-        </div>
-      </main>
+      </Card>
     );
   }
 }
