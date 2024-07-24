@@ -19,8 +19,13 @@ export default class ApiComponent extends Component {
   //   }]
   // }]
 
+
+  class AppleChart extends Component {
+   
+
   constructor(props, vol, dataset, core) {
     super(props);
+
 
     this.state = {
       series: [
