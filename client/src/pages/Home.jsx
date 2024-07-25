@@ -1,3 +1,4 @@
+import ApiTestComponent from "../components/ApiTestComponent";
 import Donut from "../components/DonutChart";
 import GettingStarted from "../components/GettingStarted";
 import LineChart from "../components/LineChart";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <h2>Donut Chart</h2>
       <Donut />
       {/* <ApiFetching /> */}
+      <ApiTestComponent />
     </>
   );
 }

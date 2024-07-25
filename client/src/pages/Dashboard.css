@@ -55,3 +55,16 @@ strong {
   top: -30px;
   cursor: pointer;
 }
+
+.spinner-border {
+  display: none;
+}
+
+/* .div-one {
+  margin-top: 1rem;
+  flex-direction: row;
+}
+
+.div-two {
+
+} */

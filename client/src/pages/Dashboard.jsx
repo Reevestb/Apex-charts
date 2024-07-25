@@ -69,7 +69,8 @@ export default function DashboardPage() {
     );
   }
 
-  function generateMinuteWiseTimeSeries(baseval, count, yrange) {
+  function generateMinuteWiseTimeSeries(baseval, count) {
+    //taken yrange out as its not being used
     let i = 0;
     let series = [];
     while (i < count) {
@@ -661,6 +662,8 @@ export default function DashboardPage() {
           <div className="container-fluid">
             <div className="main">
               <div className="row mt-4">
+                {" "}
+                {/* row mt-4 */}
                 <div className="col-md-5">
                   <div className="box columnbox mt-4">
                     <div id="columnchart"> </div>
