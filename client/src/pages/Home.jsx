@@ -10,8 +10,10 @@ export default function HomePage() {
       <GettingStarted />
       <h2>Bar Chart</h2>
       <MyComponent />
+      <br></br>
       <h2>Line Chart</h2>
       <LineChart />
+      <br></br>
       <h2>Donut Chart</h2>
       <Donut />
     </>
