@@ -19,5 +19,6 @@
 
 ## Attributions
 
-- API: Data provided by Financial Modeling Prep - https://financialmodelingprep.com/developer/docs/
+- API: Data provided by Financial Modeling Prep - https://financialmodelingprep.com/developer/docs/ - Data has been localised and edited for demo purposes
 - Charts and getting started information from Apex.js https://apexcharts.com/docs/react-charts/
+- Candlestick guide: https://daext.com/blog/create-a-candlestick-chart-with-the-apexcharts-javascript-library/

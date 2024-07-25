@@ -82,14 +82,14 @@ export default function DashboardPage() {
         (trigoStrength * 2);
 
       series.push([x, y]);
-      baseval += 300000;
+      baseval += 3000000;
       i++;
     }
     return series;
   }
 
   function getNewData(baseval, yrange) {
-    let newTime = baseval + 300000;
+    let newTime = baseval + 3000000;
     return {
       x: newTime,
       y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min,
