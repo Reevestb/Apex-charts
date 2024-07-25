@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ApiFetching from "../utils/apiFetch";
+import ApiTestComponent from "../components/ApiTestComponent";
 
 export default function ApiPage() {
   const [chartData, setChartData] = useState([]); //we need an array to map through it
@@ -39,7 +39,7 @@ export default function ApiPage() {
     <>
       <h1>Apple Stock Data</h1>
       {chartData.map((item, index) => {
-        // console.log(chartData);
+        console.log(chartData);
         return (
           <>
             <h2 key={index}>
@@ -49,6 +49,7 @@ export default function ApiPage() {
               {item[19].date}
 
               {/* <ApiFetching /> */}
+              <ApiTestComponent date={item[0].date} />
             </h2>
           </>
         );
