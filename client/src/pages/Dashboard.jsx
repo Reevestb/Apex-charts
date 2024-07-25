@@ -655,7 +655,8 @@ export default function DashboardPage() {
 
   return (
     <>
-      <h1>Graphs as a Dashboard</h1>
+      <br></br>
+      <h2>Graphs as a Dashboard</h2>
 
       <div id="wrapper">
         <div className="content-area">

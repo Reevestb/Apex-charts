@@ -10,7 +10,7 @@ export default function GettingStarted() {
   return (
     <>
       <br></br>
-      <Heading>Getting Started</Heading>
+      <h2>Getting Started</h2>
 
       <div className="card-margin">
         <Flex direction="column" gap="2">
@@ -22,7 +22,7 @@ export default function GettingStarted() {
             ease.{" "}
           </Text>
           <br></br>
-          <Heading>Install</Heading>
+          <h3>Install</h3>
           <Separator my="3" size="4" />
           <Text>
             Install the React-ApexCharts component in your React application
