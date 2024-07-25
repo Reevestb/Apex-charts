@@ -13,6 +13,7 @@
   width: 600px;
   overflow: scroll;
   scroll-behavior: smooth;
+  padding: 2rem;
 }
 
 #bc-lineN {
@@ -44,4 +45,9 @@
 .link-text {
   text-decoration: none;
   color: white;
+}
+
+.candle {
+  background-color: rgb(57, 57, 57);
+  padding: 2rem;
 }

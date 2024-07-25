@@ -1,5 +1,9 @@
 import { CodeBlock } from "react-code-block";
+
 import "./Cbcandles.css";
+
+import "./RBC.css";
+
 export default function CandleCodeBlock() {
   const codeExample = `export default class CandleStick extends Component {
   constructor(props) {
@@ -50,7 +54,8 @@ export default function CandleCodeBlock() {
   },
 `;
   return (
-    <div id="code-blocks">
+
+    <div id="candle">
       <div className="codesec">
         <h3>Apexchart code for Chart Object</h3>
         <CodeBlock code={codeExample} language="js">
@@ -89,5 +94,6 @@ export default function CandleCodeBlock() {
         </CodeBlock>
       </div>
     </div>
+
   );
 }
