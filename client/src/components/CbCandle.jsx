@@ -54,26 +54,28 @@ export default function CandleCodeBlock() {
   },
 `;
   return (
-    <div className="codesec">
-      <br></br>
-      <h3>Apexchart code for Chart Object</h3>
-      <br></br>
-      <div className="candle">
-        <CodeBlock code={codeExample} language="js">
-          <CodeBlock.Code className="bg-black">
-            <div id="bc-lineN">
-              <CodeBlock.LineNumber className="cb-ln" />
-              <CodeBlock.LineContent className="cb-lc">
-                <CodeBlock.Token />
-              </CodeBlock.LineContent>
-            </div>
-          </CodeBlock.Code>
-        </CodeBlock>
+    <div id="code-blocks">
+      <div className="codesec">
+        <br></br>
+        <h3>Apexchart code for Chart Object</h3>
+
+        <div className="candle">
+          <CodeBlock code={codeExample} language="js">
+            <CodeBlock.Code className="bg-black">
+              <div id="bc-lineN">
+                <CodeBlock.LineNumber className="cb-ln" />
+                <CodeBlock.LineContent className="cb-lc">
+                  <CodeBlock.Token />
+                </CodeBlock.LineContent>
+              </div>
+            </CodeBlock.Code>
+          </CodeBlock>
+        </div>
       </div>
       <div className="codesec">
         <br></br>
-        <h4> Original Api form</h4>
-        <br></br>
+        <h3> Original Api form</h3>
+
         <div className="candle">
           <CodeBlock code={dataExample1} language="js">
             <CodeBlock.Code className="bg-black">
