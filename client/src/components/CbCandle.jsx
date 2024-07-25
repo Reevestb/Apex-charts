@@ -1,4 +1,7 @@
 import { CodeBlock } from "react-code-block";
+
+import "./Cbcandles.css";
+
 import "./RBC.css";
 
 export default function CandleCodeBlock() {
@@ -33,7 +36,7 @@ export default function CandleCodeBlock() {
     };
   }`;
 
-  const dataExample = `
+  const dataExample1 = `
   
   Original Api form
    {
@@ -43,32 +46,53 @@ export default function CandleCodeBlock() {
     "high": 178.34,
     "close": 178.19,
     "volume": 2640606
-  },
-  
-restructured version
+  },`;
 
-  {
+  const dataExample2 = `{
     x: new Date(1538778600000),
     y: [178, 178.34, 177.99, 178.19],
   },
 `;
   return (
 
-    <div className="candle">
-
-    <>
-
-      <CodeBlock code={codeExample} language="js">
-        <CodeBlock.Code className="bg-black">
-          <div id="bc-lineN">
-            <CodeBlock.LineNumber className="cb-ln" />
-            <CodeBlock.LineContent className="cb-lc">
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </div>
-        </CodeBlock.Code>
-      </CodeBlock>
-
+    <div id="candle">
+      <div className="codesec">
+        <h3>Apexchart code for Chart Object</h3>
+        <CodeBlock code={codeExample} language="js">
+          <CodeBlock.Code className="bg-black">
+            <div id="bc-lineN">
+              <CodeBlock.LineNumber className="cb-ln" />
+              <CodeBlock.LineContent className="cb-lc">
+                <CodeBlock.Token />
+              </CodeBlock.LineContent>
+            </div>
+          </CodeBlock.Code>
+        </CodeBlock>
+      </div>
+      <div className="codesec">
+        <h4> Original Api form</h4>
+        <CodeBlock code={dataExample1} language="js">
+          <CodeBlock.Code className="bg-black">
+            <div id="bc-lineN">
+              <CodeBlock.LineNumber className="cb-ln" />
+              <CodeBlock.LineContent className="cb-lc">
+                <CodeBlock.Token />
+              </CodeBlock.LineContent>
+            </div>
+          </CodeBlock.Code>
+        </CodeBlock>
+        <h4>Restructred form</h4>
+        <CodeBlock code={dataExample2} language="js">
+          <CodeBlock.Code className="bg-black">
+            <div id="bc-lineN">
+              <CodeBlock.LineNumber className="cb-ln" />
+              <CodeBlock.LineContent className="cb-lc">
+                <CodeBlock.Token />
+              </CodeBlock.LineContent>
+            </div>
+          </CodeBlock.Code>
+        </CodeBlock>
+      </div>
     </div>
 
   );
