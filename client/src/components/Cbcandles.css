@@ -1,0 +1,7 @@
+#code-blocks {
+  display: flex;
+  flex-direction: row;
+}
+.codesec {
+  width: 45vw;
+}
