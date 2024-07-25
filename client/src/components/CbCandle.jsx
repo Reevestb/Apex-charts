@@ -1,6 +1,6 @@
 import { CodeBlock } from "react-code-block";
 
-export default function CodeBlockBC() {
+export default function CandleCodeBlock() {
   const codeExample = `export default class CandleStick extends Component {
   constructor(props) {
     super(props);

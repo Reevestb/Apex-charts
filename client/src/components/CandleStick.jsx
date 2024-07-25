@@ -5,6 +5,8 @@ import ReactApexChart from "react-apexcharts";
 // import { Component } from "react";
 import { data } from "../lib/clippedLib";
 // import { volume } from "../lib/clippedVol";
+import { Card } from "@radix-ui/themes";
+import CandleCodeBlock from "./CbCandle";
 
 export default class CandleStick extends Component {
   constructor(props) {
@@ -39,7 +41,8 @@ export default class CandleStick extends Component {
 
   render() {
     return (
-      <div>
+      <Card>
+        <br></br>
         <div id="chart">
           <ReactApexChart
             options={this.state.options}
@@ -48,8 +51,9 @@ export default class CandleStick extends Component {
             height={350}
           />
         </div>
+        <CandleCodeBlock />
         <div id="html-dist"></div>
-      </div>
+      </Card>
     );
   }
 }
