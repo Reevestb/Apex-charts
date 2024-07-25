@@ -3,7 +3,9 @@ import CandleStick from "../components/CandleStick";
 export default function ApiPage() {
   return (
     <>
-      <h1>Apple Stock Data</h1>
+      <br></br>
+      <h2>Apple Stock Data</h2>
+      <br></br>
       <CandleStick />
     </>
   );
