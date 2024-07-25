@@ -89,7 +89,7 @@ export default function CandleCodeBlock() {
           </CodeBlock>
         </div>
         <br></br>
-        <h4>Restructred form</h4>
+        <h4>Restructured form</h4>
         <br></br>
         <div className="candle">
           <CodeBlock code={dataExample2} language="js">
