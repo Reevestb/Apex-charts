@@ -158,7 +158,7 @@ export default function DashboardPage() {
       },
     ],
     title: {
-      text: "Load Average",
+      text: "General Progress",
       align: "left",
       style: {
         fontSize: "12px",
@@ -274,7 +274,7 @@ export default function DashboardPage() {
     },
     series: [
       {
-        name: "Running",
+        name: "Uptime",
         data: generateMinuteWiseTimeSeries(
           new Date("12/12/2016 00:20:00").getTime(),
           12,
@@ -285,7 +285,7 @@ export default function DashboardPage() {
         ),
       },
       {
-        name: "Waiting",
+        name: "Downtime",
         data: generateMinuteWiseTimeSeries(
           new Date("12/12/2016 00:20:00").getTime(),
           12,
@@ -359,7 +359,7 @@ export default function DashboardPage() {
       },
     },
     series: [71, 63],
-    labels: ["Device 1", "Device 2"],
+    labels: ["Primary device", "Backup"],
     legend: {
       show: true,
       position: "left",
@@ -412,7 +412,7 @@ export default function DashboardPage() {
     },
     series: [
       {
-        name: "Process 1",
+        name: "Theo's Greatness",
         data: [44],
       },
     ],
@@ -420,7 +420,7 @@ export default function DashboardPage() {
       floating: true,
       offsetX: -10,
       offsetY: 5,
-      text: "Process 1",
+      text: "Theo's Greatness",
     },
     subtitle: {
       floating: true,
@@ -435,7 +435,7 @@ export default function DashboardPage() {
       enabled: false,
     },
     xaxis: {
-      categories: ["Process 1"],
+      categories: ["Theo's Greatness"],
     },
     yaxis: {
       max: 100,
@@ -475,7 +475,7 @@ export default function DashboardPage() {
     },
     series: [
       {
-        name: "Process 2",
+        name: "Da Vinci's Talents",
         data: [80],
       },
     ],
@@ -483,7 +483,7 @@ export default function DashboardPage() {
       floating: true,
       offsetX: -10,
       offsetY: 5,
-      text: "Process 2",
+      text: "Da Vinci's Talents",
     },
     subtitle: {
       floating: true,
@@ -498,7 +498,7 @@ export default function DashboardPage() {
       enabled: false,
     },
     xaxis: {
-      categories: ["Process 2"],
+      categories: ["Da Vinci's Talents"],
     },
     yaxis: {
       max: 100,
@@ -542,7 +542,7 @@ export default function DashboardPage() {
     },
     series: [
       {
-        name: "Process 3",
+        name: "Richard's Magic",
         data: [74],
       },
     ],
@@ -556,7 +556,7 @@ export default function DashboardPage() {
       floating: true,
       offsetX: -10,
       offsetY: 5,
-      text: "Process 3",
+      text: "Richard's Magic",
     },
     subtitle: {
       floating: true,
